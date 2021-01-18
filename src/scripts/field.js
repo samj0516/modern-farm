@@ -1,6 +1,7 @@
 
 const field = []
 
+// adds each vegetable object/array to the field array 
 export const addPlant = (seed) => {
     field.push(seed)
 }
@@ -13,6 +14,8 @@ export const addPlant = (seed) => {
 //     }
 //     return asparagus
 // }
+
+// returns a copy of the field array 
 export const usePlants = () => {
     return field.slice()
 }
