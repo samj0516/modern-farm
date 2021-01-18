@@ -1,7 +1,13 @@
 import { addPlant } from "./field.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from './seeds/corn.js'
+import { createPotato } from './seeds/potato.js'
+import { createSoybean } from './seeds/soybean.js'
+import { createSunflower } from './seeds/sunflower.js'
+import { createWheat } from './seeds/wheat.js'
 
+
+// iterates over plan and creates a object/array for each vegetable and adds each object to the field array 
 export const plantSeeds = (plan) => {
      let creatingObjects 
     //  console.table(plan)
@@ -13,13 +19,27 @@ export const plantSeeds = (plan) => {
                 // console.log("You are here!")
                 creatingObjects = createAsparagus()
                 addPlant(creatingObjects)
-                console.log("You are here!")
             }
-            // console.log(row, column)
-            // } else if (plan[row][column] == "Corn"){
-            //     createCorn()
-            // }
-    
+            else if (plan[row][column] == "Corn"){
+                creatingObjects = createCorn()
+                addPlant(creatingObjects)
+            }
+            else if (plan[row][column] == "Potato"){
+                creatingObjects = createPotato()
+                addPlant(creatingObjects)
+            }
+            else if (plan[row][column] == "Soybean"){
+                creatingObjects = createSoybean()
+                addPlant(creatingObjects)
+            }
+            else if (plan[row][column] == "Sunflower"){
+                creatingObjects = createSunflower()
+                addPlant(creatingObjects)
+            }
+            else if (plan[row][column] == "Wheat"){
+                creatingObjects = createWheat()
+                addPlant(creatingObjects)
+            }
         }   
     }
     
