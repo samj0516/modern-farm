@@ -20,4 +20,9 @@ import { plantSeeds } from './tractor.js'
 plantSeeds(yearlyPlan)
 let plantedSeed = usePlants()
 
-console.log(plantedSeed)
+// console.log(plantedSeed)
+
+import { harvestPlants } from './harvester.js'
+
+let harvest = harvestPlants(plantedSeed)
+console.log(harvest)
