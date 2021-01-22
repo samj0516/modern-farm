@@ -25,4 +25,6 @@ let plantedSeed = usePlants()
 import { harvestPlants } from './harvester.js'
 
 let harvest = harvestPlants(plantedSeed)
-console.log(harvest)
+// console.log(harvest)
+import { Catalog } from './catalog.js'
+Catalog(harvest)
